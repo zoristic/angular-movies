@@ -32,6 +32,8 @@ import { InputImgComponent } from './utilities/input-img/input-img.component';
 import { InputMarkdownComponent } from './utilities/input-markdown/input-markdown.component';
 import { MovieTheaterFormComponent } from './movie-teathers/movie-theater-form/movie-theater-form.component';
 import { MapComponent } from './utilities/map/map.component';
+import { MovieFormComponent } from './movies/movie-form/movie-form.component';
+import { MultipleSelectorComponent } from './utilities/multiple-selector/multiple-selector.component';
 //import "leaflet/dist/images/marker-shadow.png";
 
 
@@ -60,7 +62,9 @@ import { MapComponent } from './utilities/map/map.component';
     InputImgComponent,
     InputMarkdownComponent,
     MovieTheaterFormComponent,
-    MapComponent    
+    MapComponent,
+    MovieFormComponent,
+    MultipleSelectorComponent    
   ],
   imports: [
     BrowserModule,

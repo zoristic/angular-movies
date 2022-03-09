@@ -11,6 +11,7 @@ export class MovieFilterComponent implements OnInit {
   constructor(private formBuilder: FormBuilder) { }
 
   form: FormGroup| any;
+
   genres= [{id:1, name: 'Drama'}, {id:2, name: 'Action'}];
   movies = [
     {title: 'Spider-Man', poster: 'https://m.media-amazon.com/images/M/MV5BNjYwYTJjMjQtNTM3OC00YmEwLTg5YzktY2FlNzUwMmNiYWI2XkEyXkFqcGdeQXVyNzU3Nzk4MDQ@._V1_QL75_UY562_CR35,0,380,562_.jpg'},
@@ -40,7 +41,6 @@ export class MovieFilterComponent implements OnInit {
 
     }
   }
-
   clearForm() {
     this.form.reset();
 
