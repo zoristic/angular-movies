@@ -35,12 +35,11 @@ export class MultipleSelectorComponent implements OnInit {
   selectAll(){
     this.SelectedItems.push(...this.NonSelectedItems);
     this.NonSelectedItems = [];
-
   }
+  
   deselectAll(){
     this.NonSelectedItems.push(...this.SelectedItems);
     this.SelectedItems = [];
-
   }
 
 }

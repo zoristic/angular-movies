@@ -35,7 +35,17 @@
 
     <h4>Select The Genres</h4>
 
-    <app-multiple-selector></app-multiple-selector>
+    <app-multiple-selector [NonSelectedItems]="nonSelectedgenres"
+    [SelectedItems]="selectedGenres"></app-multiple-selector>
+
+    <h4>Select The Movie Theaters</h4>
+
+    <app-multiple-selector [NonSelectedItems]="nonSelectedMovieTheaters"
+    [SelectedItems]="selectedMovieTheaters"></app-multiple-selector>
+
+    <h4>Select The Actors</h4>
+
+    <app-actors-autocomplite></app-actors-autocomplite>
 
     <div>
         <button mat-flat-button color="primary" [disabled]="form.invalid">

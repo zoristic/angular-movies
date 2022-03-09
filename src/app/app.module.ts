@@ -34,6 +34,7 @@ import { MovieTheaterFormComponent } from './movie-teathers/movie-theater-form/m
 import { MapComponent } from './utilities/map/map.component';
 import { MovieFormComponent } from './movies/movie-form/movie-form.component';
 import { MultipleSelectorComponent } from './utilities/multiple-selector/multiple-selector.component';
+import { ActorsAutocompliteComponent } from './actors/actors-autocomplite/actors-autocomplite.component';
 //import "leaflet/dist/images/marker-shadow.png";
 
 
@@ -64,7 +65,8 @@ import { MultipleSelectorComponent } from './utilities/multiple-selector/multipl
     MovieTheaterFormComponent,
     MapComponent,
     MovieFormComponent,
-    MultipleSelectorComponent    
+    MultipleSelectorComponent,
+    ActorsAutocompliteComponent    
   ],
   imports: [
     BrowserModule,
