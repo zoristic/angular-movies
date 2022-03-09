@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { MoviesListComponent } from './movies/movies-list/movies-list.component';
 import { GenericListComponent } from './utilities/generic-list/generic-list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { MarkdownModule } from 'ngx-markdown';
+import { LeafletModule } from '@asymmetrik/ngx-leaflet'
 
 import { MaterialModule } from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
@@ -24,6 +26,14 @@ import { EditGenreComponent } from './genres/edit-genre/edit-genre.component';
 import { EditMovieTreaterComponent } from './movies-theaters/edit-movie-treater/edit-movie-treater.component';
 import { EditMovieComponent } from './movies/edit-movie/edit-movie.component';
 import { FormGenreComponent } from './genres/form-genre/form-genre.component';
+import { MovieFilterComponent } from './movies/movie-filter/movie-filter.component';
+import { FormActorComponent } from './actors/form-actor/form-actor.component';
+import { InputImgComponent } from './utilities/input-img/input-img.component';
+import { InputMarkdownComponent } from './utilities/input-markdown/input-markdown.component';
+import { MovieTheaterFormComponent } from './movie-teathers/movie-theater-form/movie-theater-form.component';
+import { MapComponent } from './utilities/map/map.component';
+//import "leaflet/dist/images/marker-shadow.png";
+
 
 @NgModule({
   declarations: [
@@ -44,14 +54,23 @@ import { FormGenreComponent } from './genres/form-genre/form-genre.component';
     EditGenreComponent,
     EditMovieTreaterComponent,
     EditMovieComponent,
-    FormGenreComponent
+    FormGenreComponent,
+    MovieFilterComponent,
+    FormActorComponent,
+    InputImgComponent,
+    InputMarkdownComponent,
+    MovieTheaterFormComponent,
+    MapComponent    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    LeafletModule,
+    MarkdownModule.forRoot()   
   ],
   providers: [],
   bootstrap: [AppComponent]
